@@ -5,6 +5,10 @@ const particlesConfig = {
       },
     },
     fpsLimit: 120,
+    fullScreen: {
+        enable: true,
+        zIndex: -1,
+    },
     interactivity: {
       events: {
         onClick: {
