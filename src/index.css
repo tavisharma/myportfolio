@@ -13,12 +13,37 @@ code {
 }
 
 .header-main {
-  width: 100%;
+  width: 90%;
   height: 8%;
-  background-color: rgba(1, 4, 70);
+  margin: 1% 5% 1% 5%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
 }
 
 .app-logo {
-  width: 10%;
-  height: 5%;
+  width: auto;
+  height: 80%;
+  margin-left: 10px;
+  padding-top: 1.6%;
+}
+
+.header-left {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.header-right {
+  width: 33%;
+  height: 100%;
+}
+
+.header-middle {
+  width: 33%;
+  height: 100%;
 }

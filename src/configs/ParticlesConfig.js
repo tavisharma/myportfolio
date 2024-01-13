@@ -1,7 +1,7 @@
 const particlesConfig = {
     background: {
       color: {
-        value: "#0d47a1",
+        value: "#000000",
       },
     },
     fpsLimit: 120,
@@ -17,15 +17,15 @@ const particlesConfig = {
         },
         onHover: {
           enable: true,
-          mode: "repulse",
+          mode: "attract",
         },
       },
       modes: {
         push: {
-          quantity: 4,
+          quantity: 2,
         },
         repulse: {
-          distance: 200,
+          distance: 150,
           duration: 0.4,
         },
       },
