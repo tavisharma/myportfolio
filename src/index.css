@@ -16,8 +16,8 @@ code {
   width: 90%;
   height: 8%;
   margin: 1% 5% 1% 5%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   z-index: 2;
   position: fixed;
   display: flex;
@@ -32,18 +32,41 @@ code {
 }
 
 .header-left {
-  width: 33%;
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: left;
 }
 
 .header-right {
-  width: 33%;
+  width: 25%;
   height: 100%;
+  display: flex;
+  justify-content: right;
 }
 
 .header-middle {
-  width: 33%;
+  width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu-item {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-right: 2%;
+}
+
+.header-icons {
+  margin-right: 5%;
 }
