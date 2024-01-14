@@ -8,23 +8,45 @@ class IconElement extends React.Component <any, any> {
     render() {
         return (
             <div className={this.props.classname} >
-               <IconContext.Provider value={{size:"75%", color: "black", className: "global-class-name" }}>
+               <IconContext.Provider value={{size:"100%", color: "black", className: "global-class-name" }}>
                     <div className="header-icons">
-                        <MdEmail />
+                        <button className="header-icon-button" onClick={(event) => this.handleClick(event, 'mail')}>
+                            <MdEmail />
+                        </button>
                     </div>
                 </IconContext.Provider>
-                <IconContext.Provider value={{size:"75%", color: "black", className: "global-class-name" }}>
+                <IconContext.Provider value={{size:"100%", color: "black", className: "global-class-name" }}>
                     <div className="header-icons">
-                        <SiGithub />
+                        <button className="header-icon-button" onClick={(event) => this.handleClick(event, 'gitHub')}>
+                            <SiGithub />
+                        </button>
                     </div>
                 </IconContext.Provider>
-                <IconContext.Provider value={{size:"75%", color: "black", className: "global-class-name" }}>
+                <IconContext.Provider value={{size:"100%", color: "black", className: "global-class-name" }}>
                     <div className="header-icons">
-                        <SiLinkedin />
+                        <button className="header-icon-button" onClick={(event) => this.handleClick(event, 'linkedin')}>
+                            <SiLinkedin />
+                        </button>
                     </div>
                 </IconContext.Provider>
             </div>
         );
+    }
+
+    handleClick(event, type) : any {
+        if (type == 'mail') {
+            event.preventDefault();
+            const mailToLink = 'mailto:tavisharma2001@gmail.com';
+            window.location.href = mailToLink;
+        } else if (type == 'gitHub') {
+            event.preventDefault();
+            const link = 'https://github.com/tavisharma';
+            window.open(link,'_blank');
+        } else if (type == 'linkedin') {
+            event.preventDefault();
+            const link = 'https://www.linkedin.com/in/tavish-sharma-42201916b';
+            window.open(link,'_blank');
+        }
     }
 }
 
